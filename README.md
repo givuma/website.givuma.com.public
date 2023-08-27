@@ -13,7 +13,8 @@ cd ../astro/givumaconsulting
 npm install
 ```
 
-Update the google
+Update the Google Tag Manager Id.
+Search for `GOOGLE_TAG_MANAGER_ID` and replace it with yours.
 
 ## Firebase Functions
 
@@ -40,5 +41,5 @@ PUSHOVER_USER = ""
 
 ```bash
 cd ..
-sh deploy.sh  - Note you can deploy the website, or consulting or functions indipendently.
+sh deploy.sh  # Note you can deploy the website, or consulting or functions indipendently.
 ```

@@ -1,0 +1,69 @@
+---
+import Container from "@components/section/Container.astro";
+import FooterEmail from "@components/section/FooterEmail.astro";
+import Logo from "@components/base/Logo.astro";
+---
+
+<footer class="font-sans bg-white dark:bg-muted-900">
+  <Container>
+    <div class="px-5 py-24 mx-auto">
+      <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
+        <!-- ltablet:w-2/6 lg:w-2/6 -->
+        <div class="w-full mb-10 ltablet:mb-0 lg:mb-0 px-4">
+          <div class="max-w-[400px] mx-auto md:mx-0">
+            <a href="/" class="flex items-center justify-center md:justify-start gap-3 mb-4">
+              <div class="text-primary-600 transition-all duration-300">
+                <Logo class="'w-9 h-9'" />
+              </div>
+              <span class="font-sans text-lg tracking-widest text-muted-800 dark:text-muted-100">Givuma Consulting</span>
+            </a>
+            <p class="text-sm text-left text-muted-700 dark:text-muted-400 mb-10 md:mb-0">
+              We provide a wide range of Finance and Business services for your company including Accounting, Finance, Bookkeeping, Human Resources and Recruiting.
+            </p>
+          </div>
+        </div>
+        <!-- <div class="lg:w-1/6 ltablet:w-1/6 w-1/2 px-4">
+          <h2 class="font-medium tracking-widest text-sm mb-5 text-muted-800 dark:text-muted-100">RESOURCES</h2>
+          <ul class="list-none space-y-3 mb-10">
+            <li>
+              <a href="#" class="text-sm text-muted-700 dark:text-muted-400 hover:text-primary-500 dark:hover:text-primary-500 transition-colors duration-300">About</a>
+            </li>
+            <li>
+              <a href="#" class="text-sm text-muted-700 dark:text-muted-400 hover:text-primary-500 dark:hover:text-primary-500 transition-colors duration-300">Careers</a>
+            </li>
+            <li>
+              <a href="#" class="text-sm text-muted-700 dark:text-muted-400 hover:text-primary-500 dark:hover:text-primary-500 transition-colors duration-300">Press</a>
+            </li>
+          </ul>
+        </div> -->
+        <!-- <div class="lg:w-1/6 ltablet:w-1/6 w-1/2 px-4">
+          <h2 class="font-medium tracking-widest text-sm mb-5 text-muted-800 dark:text-muted-100">ASSISTANCE</h2>
+          <ul class="list-none space-y-3 mb-10">
+            <li>
+              <a href="#" class="text-sm text-muted-700 dark:text-muted-400 hover:text-primary-500 dark:hover:text-primary-500 transition-colors duration-300">Help Center</a>
+            </li>
+            <li>
+              <a href="#" class="text-sm text-muted-700 dark:text-muted-400 hover:text-primary-500 dark:hover:text-primary-500 transition-colors duration-300">FAQs</a>
+            </li>
+            <li>
+              <a href="#" class="text-sm text-muted-700 dark:text-muted-400 hover:text-primary-500 dark:hover:text-primary-500 transition-colors duration-300">Terms Of Service</a>
+            </li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+  </Container>
+  
+  <!-- <FooterEmail /> -->
+
+  <div class="bg-muted-100 dark:bg-muted-800">
+    <Container>
+      <div class="py-4 px-5 pb-16 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-muted-700 dark:text-muted-400 text-sm text-center sm:text-left">
+          © {new Date().getFullYear()} All Rights Reserved —
+          <a href="https://givumaconsulting.com" class="hover:text-primary-500" rel="noopener noreferrer">Givuma Consulting</a>
+        </p>
+      </div>
+    </Container>
+  </div>
+</footer>

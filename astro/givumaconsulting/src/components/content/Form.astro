@@ -1,0 +1,138 @@
+<div class="py-10">
+  <div class="w-full ltablet:max-w-4xl mx-auto">
+    <div class="bg-primary-900 rounded-3xl shadow-xl overflow-hidden">
+      <div class="flex items-center pt-10 pb-12 px-6">
+        <div class="ltablet:self-center lg:self-center font-sans">
+          <h2 class="text-3xl font-medium text-white sm:text-4xl">
+            <span class="block">Contact Us</span>
+            <span class="block">Get started in less than a minute.</span>
+          </h2>
+          <p class="mt-4 text-lg leading-6 text-white">Got questions or ideas? Drop us a line. We're just a click away and eager to chat!</p>
+
+          <form action="/givuma-consulting-contact/send" method="post">
+            <div class="mt-10 mb-6">
+              <label for="name" class="block mb-2 text-white text-sm">Name</label>
+              <input type="text" id="name" name="name" class="w-100 w-full max-w-md rounded-lg p-4 text-black dark:bg-white" placeholder="Name..." />
+            </div>
+
+            <div class="mt-10 mb-6">
+              <label for="company_name" class="block mb-2 text-white text-sm">Company Name</label>
+              <input type="text" id="company_name" name="company_name" class="w-100 w-full max-w-md rounded-lg p-4 text-black dark:bg-white" placeholder="Company name..." />
+            </div>
+
+            <div class="mt-10 mb-6">
+              <label for="company_address" class="block mb-2 text-white text-sm">Address</label>
+              <input type="text" id="company_address" name="company_address" class="w-100 w-full max-w-md rounded-lg p-4 text-black dark:bg-white" placeholder="Company address..." />
+            </div>
+
+            <div class="mt-10 mb-6">
+              <label for="email" class="block mb-2 text-white text-sm">E-mail <span class="text-xs text-red-600">*</span></label>
+              <input type="email" id="email" name="email" required class="w-100 w-full max-w-md rounded-lg p-4 text-black dark:bg-white" placeholder="Email..." required />
+            </div>
+
+            <div class="mt-10 mb-6">
+              <label for="phone" class="block mb-2 text-white text-sm">Phone</label>
+              <input type="text" id="phone" name="phone" required class="w-100 w-full max-w-md rounded-lg p-4 text-black dark:bg-white" placeholder="Phone..." />
+            </div>
+
+            <div class="mt-10 mb-6">
+              <label for="services" class="block mb-2 text-white text-sm">Services Required</label>
+
+              <fieldset>
+                <div class="flex items-center mb-4 ml-4">
+                  <input
+                    id="checkbox_1"
+                    name="checkbox_1"
+                    type="checkbox"
+                    value="Accounting"
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  />
+                  <label for="checkbox_1" class="ml-2 text-sm font-medium text-white">Accounting</label>
+                </div>
+                <div class="flex items-center mb-4 ml-4">
+                  <input
+                    id="checkbox_2"
+                    name="checkbox_2"
+                    type="checkbox"
+                    value="Bookkeeping"
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  />
+                  <label for="checkbox_2" class="ml-2 text-sm font-medium text-white">Bookkeeping</label>
+                </div>
+                <div class="flex items-center mb-4 ml-4">
+                  <input
+                    id="checkbox_3"
+                    name="checkbox_3"
+                    type="checkbox"
+                    value="Payroll"
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  />
+                  <label for="checkbox_3" class="ml-2 text-sm font-medium text-white">Payroll</label>
+                </div>
+                <div class="flex items-center mb-4 ml-4">
+                  <input
+                    id="checkbox_4"
+                    name="checkbox_4"
+                    type="checkbox"
+                    value="Human Resources Services"
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  />
+                  <label for="checkbox_4" class="ml-2 text-sm font-medium text-white">Human Resources Services</label>
+                </div>
+                <div class="flex items-center mb-4 ml-4">
+                  <input
+                    id="checkbox_5"
+                    name="checkbox_5"
+                    type="checkbox"
+                    value="Recruiting"
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  />
+                  <label for="checkbox_5" class="ml-2 text-sm font-medium text-white">Recruiting</label>
+                </div>
+                <div class="flex items-center mb-4 ml-4">
+                  <input
+                    id="checkbox_6"
+                    name="checkbox_6"
+                    type="checkbox"
+                    value="Other"
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  />
+                  <label for="checkbox_6" class="ml-2 text-sm font-medium text-white">Other</label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="mt-10 mb-6">
+              <label for="message" class="block mb-2 text-white text-sm">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="block p-4 w-full max-w-md text-gray-900 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Message..."></textarea>
+            </div>
+            <button
+              type="submit"
+              class="relative mt-4 font-sans font-normal inline-flex items-center justify-center leading-5 no-underline space-x-1 text-white bg-primary-600 h-12 px-5 py-3 text-sm rounded-xl hover:bg-primary-700 hover:shadow-xl hover:shadow-primary-600/20 tw-accessibility transition-all duration-300 min-w-[130px]"
+              >Submit</button
+            >
+          </form>
+        </div>
+      </div>
+      <div class="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
+        <img
+          class="block mix-blend-lighten rounded-3xl dark:hidden translate-x-6 translate-y-6 object-cover object-left-top sm:translate-x-16 ltablet:translate-y-20 lg:translate-y-20"
+          src="/img/illustrations/c.avif"
+          alt="Cta image"
+          loading="lazy"
+        />
+        <img
+          class="hidden mix-blend-lighten rounded-3xl dark:block object-cover object-left-top translate-x-6 -translate-y-32 sm:-translate-x-32 ltablet:-translate-y-32 lg:-translate-y-32"
+          src="/img/illustrations/a.avif"
+          alt="Cta image"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Main from "../layouts/Main.astro";
+
+import Hero from "../components/Hero.astro";
+---
+
+<Layout title="Givuma - About Us" description="We provide services for small to large companies. We provide iOS or Androit Native Apps and Digital Marketing services">
+  <Hero />
+
+  <Main>
+    <h1 class="mb-2 text-3xl font-semibold text-gray-900 dark:text-gray-800">Contact</h1>
+
+    <p>Contact Givuma for advanced native apps and digital marketing</p>
+    <p>Email <a href="mailto:info@givuma.com">info@givuma.com</a></p>
+    <p>Phone <a href="tell:+14086229220">+1 646 450 6233</a></p>
+
+    <form action="/contact/send" class="max-w-sm">
+      <div class="mt-6 mb-6">
+        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">Your email</label>
+        <input
+          type="email"
+          id="email"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-100 dark:border-gray-300 dark:placeholder-gray-500 dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Email"
+          required
+        />
+      </div>
+
+      <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-800">Your message</label>
+      <textarea
+        id="message"
+        rows="4"
+        placeholder="How can we help?"
+        class="block mb-4 p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-100 dark:border-gray-300 dark:placeholder-gray-500 dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      ></textarea>
+
+      <input type="hidden" id="company" value="givuma" />
+      
+      <button
+        type="submit"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >Send</button
+      >
+    </form>
+  </Main>
+</Layout>

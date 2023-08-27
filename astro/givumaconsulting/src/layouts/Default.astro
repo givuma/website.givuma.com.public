@@ -1,0 +1,65 @@
+---
+import Unfont from "unplugin-fonts/astro/component.astro";
+import Navbar from "@components/navigation/Navbar.astro";
+import Footer from "@components/section/Footer.astro";
+import "swiper/css/bundle";
+import "../styles/main.css";
+
+import { SITE_URL, GOOGLE_TAG_MANAGER, GOOGLE_AD_SENSE } from "../config.js";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+
+const ogImage = `${SITE_URL}/images/logo.png`;
+const canonical = Astro.url.toString().replace('.html', '').replace(/\/$/, '');
+
+---
+
+<!DOCTYPE html>
+<html lang="en" class="_dark" x-data="theme()" :class="$store.app.isDark ? 'dark' : ''">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1E2449" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <Unfont />
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={SITE_URL} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="Givuma" />
+
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    
+    <link rel="canonical" href={canonical} />
+    <!-- <link rel="alternate" href={otherLanguageUrl} hreflang={i18next.language} /> -->
+    <link rel="preconnect" href="https://partner.googleadservices.com" />
+    <link rel="preconnect" href="https://googleads.g.doubleclick.net" />
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+
+    <Fragment set:html={GOOGLE_TAG_MANAGER} />
+    <Fragment set:html={GOOGLE_AD_SENSE} />
+  </head>
+  <body x-data="homeSpy()" class="bg-white">
+    <!-- Navbar -->
+    <Navbar />
+
+    <!-- Body slot -->
+    <slot />
+
+    <!-- Footer -->
+    <Footer />
+
+    <!-- Main script -->
+    <script src="../js/main"></script>
+  </body>
+</html>

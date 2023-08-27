@@ -1,0 +1,73 @@
+---
+import Layout from "@layouts/Default.astro";
+import ButtonMain from "@components/base/ButtonMain.astro";
+import HeroMain from "@components/hero/HeroMain.astro";
+import SectionMuted from "@components/section/SectionMuted.astro";
+import Container from "@components/section/Container.astro";
+import SectionTitle from "@components/section/SectionTitle.astro";
+import IconBlock from "@components/content/IconBlock.astro";
+import Cta from "@components/content/Cta.astro";
+---
+
+<Layout
+  title="Givuma Consulting - Apps and Digital Marketing at your service"
+  description="Services for small to large companies. We provide iOS or Androit Native Apps and Digital Marketing services"
+>
+  <SectionMuted top="padding-top: 8rem">
+    <Container>
+      <SectionTitle
+        title="Services"
+        subtitle="At Givuma Consulting, we pride ourselves on delivering exceptional, tailored solutions for your business needs. With a spectrum of services designed to bolster your operations, our experienced team is here to ensure your business thrives. Dive deeper to discover how we can empower your enterprise."
+      />
+      <div class="grid md:grid-cols-3 ltablet:grid-cols-5 lg:grid-cols-5 gap-x-6 gap-y-12" x-intersect="activeStep = ''">
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="📊 Accounting"
+            text="Navigating the financial intricacies of a business can be challenging. Our accounting services offer comprehensive insights into your financial health, ensuring compliance and optimized profitability. With Givuma Consulting by your side, you can be confident that your financial statements are accurate, timely, and reflective of your business's true standing."
+            class="'text-primary-600'"
+          />
+        </div>
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="📔 Bookkeeping"
+            text="Efficient bookkeeping is the foundation of any successful enterprise. Our meticulous approach ensures that every transaction is recorded accurately, enabling you to make informed decisions based on real-time data. Let us handle the numbers, so you can focus on what you do best: growing your business."
+            class="'text-rose-500'"
+          />
+        </div>
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="💵 Payroll"
+            text="Ensuring your team is paid accurately and on time is crucial for maintaining morale and compliance. Our payroll services streamline this process, making certain that every calculation, deduction, and payment is executed flawlessly. Trust in Givuma Consulting for a seamless payroll experience."
+            class="'text-primary-600'"
+          />
+        </div>
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="👥 Human Resources"
+            text="The heart of any business lies in its people. Our Human Resources services help you create a positive workplace environment, ensuring compliance with labor laws, managing employee relations, and offering training programs. We aim to help you cultivate a work culture where everyone thrives."
+            class="'text-rose-500'"
+          />
+        </div>
+
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="🔍 Recruiting"
+            text="Finding the right talent can be the difference between success and stagnation. Our recruiting services tap into vast networks and employ advanced strategies to ensure you onboard individuals who align with your company's goals and culture. Partner with Givuma Consulting, and let's build your dream team together."
+            class="'text-rose-500'"
+          />
+        </div>
+      </div>
+    </Container>
+  </SectionMuted>
+
+  <SectionMuted>
+    <Container>
+      <Cta />
+    </Container>
+  </SectionMuted>
+</Layout>

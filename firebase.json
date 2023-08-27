@@ -1,0 +1,45 @@
+{
+  "hosting": [
+    {
+      "target": "givuma",
+      "public": "astro/givuma/build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "cleanUrls": true,
+      "trailingSlash": false,
+      "rewrites": [
+        {
+          "source": "/contactGivuma/send",
+          "function": "contact",
+          "region": "us-central1",
+          "pinTag": true
+        }
+      ]
+    },
+    {
+      "target": "givumaconsulting",
+      "public": "astro/givumaconsulting/build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "cleanUrls": true,
+      "trailingSlash": false,
+      "rewrites": [
+        {
+          "source": "/givuma-consulting-contact/send",
+          "function": "contactGivumaConsulting",
+          "region": "us-central1",
+          "pinTag": true
+        }
+      ]
+    }
+  ],
+  "functions": {
+    "source": "functions"
+  }
+}

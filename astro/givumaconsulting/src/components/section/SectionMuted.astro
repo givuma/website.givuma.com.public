@@ -1,0 +1,9 @@
+---
+const { class: className, top } = Astro.props;
+
+---
+
+
+<section class="w-full pt-16 pb-16 px-3 sm:px-6 bg-muted-100 dark:bg-muted-1000" style={top} :class={className}>
+  <slot />
+</section>

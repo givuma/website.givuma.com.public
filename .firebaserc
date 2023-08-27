@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "givuma-company-site"
+  },
+  "targets": {
+    "givuma-company-site": {
+      "hosting": {
+        "givumaconsulting": [
+          "givumaconsulting"
+        ],
+        "givuma": [
+          "givuma-company-site"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

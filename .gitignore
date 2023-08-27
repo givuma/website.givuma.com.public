@@ -1,0 +1,9 @@
+.DS_Store
+node_modules/
+astro/givuma/build/
+astro/givumaconsulting/build/
+.firebase/
+resend/starter/
+
+functions/.env
+resend/.env

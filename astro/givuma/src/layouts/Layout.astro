@@ -1,0 +1,59 @@
+---
+import "@fontsource-variable/inter";
+import "~/assets/styles/base.css";
+
+import { SITE_URL, GOOGLE_TAG_MANAGER, GOOGLE_AD_SENSE } from "../config.js";
+
+import Header from "./Header.astro";
+import Footer from "./Footer.astro";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const ogImage = `${SITE_URL}/images/logo.png`;
+const canonical = Astro.url.toString().replace('.html', '').replace(/\/$/, '');
+
+const { title, description } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" /><title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1E2449" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <meta property="fb:app_id" content="813234525525813" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={SITE_URL} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="Givuma" />
+
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    
+    <link rel="canonical" href={canonical} />
+    <!-- <link rel="alternate" href={otherLanguageUrl} hreflang={i18next.language} /> -->
+    <link rel="preconnect" href="https://partner.googleadservices.com" />
+    <link rel="preconnect" href="https://googleads.g.doubleclick.net" />
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+
+    <Fragment set:html={GOOGLE_TAG_MANAGER} />
+    <Fragment set:html={GOOGLE_AD_SENSE} />
+  </head>
+
+  <body>
+    <Header />
+
+    <slot /> 
+
+    <Footer />
+    <script is:inline src={`/js/main.js`}></script>
+  </body>
+</html>

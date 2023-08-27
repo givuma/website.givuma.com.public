@@ -1,0 +1,39 @@
+---
+import Container from "@components/section/Container.astro";
+---
+
+<div class="border-t border-muted-200 dark:border-muted-800">
+    <Container>
+      <div class="px-5 py-8 flex flex-col md:flex-row mx-auto items-center">
+        <div class="w-full ltablet:w-auto lg:w-auto flex flex-col md:flex-row items-center justify-center md:justify-start gap-y-2">
+          <div class="relative w-full sm:w-64 md:w-40 sm:mr-4 mr-0">
+            <input
+              type="text"
+              class="w-full h-10 bg-muted-100 dark:bg-muted-700 bg-opacity-50 rounded-lg border border-muted-300 dark:border-muted-600 text-sm text-muted-700 py-1 px-3 leading-8 tw-accessibility transition-colors duration-300 ease-in-out"
+              placeholder="Email Address"
+            />
+          </div>
+          <button class="w-full sm:w-64 md:w-40 sm:mr-4 h-10 inline-flex items-center justify-center text-white bg-primary-600 border-0 py-2 px-6 focus:outline-none hover:bg-primary-700 rounded-lg"
+            >Subscribe</button
+          >
+          <p class="text-muted-700 text-sm md:ml-2 md:mt-0 mt-2 sm:text-left text-center">to our Newsletter</p>
+        </div>
+        <!--
+        <span class="inline-flex ltablet:ml-auto lg:ml-auto md:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+          <a class="text-muted-700">
+            <i class="iconify w-5 h-5" data-icon="fa6-brands:facebook-f"></i>
+          </a>
+          <a class="ml-3 text-muted-700">
+            <i class="iconify w-5 h-5" data-icon="fa6-brands:twitter"></i>
+          </a>
+          <a class="ml-3 text-muted-700">
+            <i class="iconify w-5 h-5" data-icon="fa6-brands:instagram"></i>
+          </a>
+          <a class="ml-3 text-muted-700">
+            <i class="iconify w-5 h-5" data-icon="fa6-brands:linkedin-in"></i>
+          </a>
+        </span>
+         -->
+      </div>
+    </Container>
+  </div>

@@ -1,0 +1,66 @@
+---
+import Layout from "@layouts/Default.astro";
+import ButtonMain from "@components/base/ButtonMain.astro";
+import HeroMain from "@components/hero/HeroMain.astro";
+import SectionMuted from "@components/section/SectionMuted.astro";
+import Container from "@components/section/Container.astro";
+import SectionTitle from "@components/section/SectionTitle.astro";
+import IconBlock from "@components/content/IconBlock.astro";
+import Cta from "@components/content/Cta.astro";
+---
+
+<Layout
+  title="Givuma Consulting - Apps and Digital Marketing at your service"
+  description="Services for small to large companies. We provide iOS or Androit Native Apps and Digital Marketing services"
+>
+  <SectionMuted top="padding-top: 8rem">
+    <Container>
+      <SectionTitle
+        title="About Us"
+        subtitle="Givuma Consulting has more than 10 years of experience helping small and medium size businesses with finance, accounting and human resources needs.  Our mission is to help clients strengthen business objectives and achieve financial goals.  Our company is dedicated to provide our clients with professional and personalized services.  We are available onsite and offsite, and we are here to help with every stage of your business."
+        minititle="Services with high quality"
+      />
+
+      <div class="grid md:grid-cols-2 ltablet:grid-cols-2 lg:grid-cols-2 gap-x-6 gap-y-12" x-intersect="activeStep = ''">
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="Our Mission"
+            text="Our primary mission is more than just assisting companies. It's about forging long-lasting partnerships. We aim to be an integral part of our client's journey, helping them refine their business objectives and ultimately realize their financial aspirations. We understand that every business is unique, and that's why our approach is always tailored to fit the distinctive needs of each client."
+            class="'text-primary-600'"
+          />
+        </div>
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="Commitment to Excellence"
+            text="At Givuma Consulting, our dedication to our craft is unwavering. We pride ourselves on offering professional services that are both thorough and personalized. Our team comprises seasoned professionals who bring a wealth of knowledge and a diverse range of skills, ensuring that our clients receive comprehensive solutions for their business needs."
+            class="'text-rose-500'"
+          />
+        </div>
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="Flexibility in Engagement"
+            text="We recognize the dynamic nature of today’s business environment. Whether you require our presence onsite for hands-on guidance or prefer offsite consultations, our flexibility ensures we are always available in a manner most convenient for you. From startup challenges to expansion strategies and operational efficiencies, Givuma Consulting stands ready to support your business at every stage."
+            class="'text-primary-600'"
+          />
+        </div>
+        <!-- Item -->
+        <div>
+          <IconBlock
+            title="Your Trusted Business Advisor"
+            text="Let’s embark on a journey together. With Givuma Consulting by your side, you can be confident in your business decisions and be well-equipped to face the challenges and opportunities that lie ahead."
+            class="'text-rose-500'"
+          />
+        </div>
+      </div>
+    </Container>
+  </SectionMuted>
+
+  <SectionMuted>
+    <Container>
+      <Cta />
+    </Container>
+  </SectionMuted>
+</Layout>
